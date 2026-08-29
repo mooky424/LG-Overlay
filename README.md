@@ -63,7 +63,7 @@ Set-ExecutionPolicy -Scope Process Bypass
 .\start-spectra-tunnel.ps1
 ```
 
-The script asks for the group code and whether to build the frontend. Building defaults to `No`.
+The script asks for the group code and whether to build the frontend. Building defaults to `No`. After the inputs, it displays `Booting Spectra...` while starting the services.
 
 The script starts:
 
@@ -72,10 +72,14 @@ The script starts:
 3. `reverse-proxy.js`
 4. `cloudflared`
 
-The script displays only the public overlay URL:
+When the tunnel is ready, the script displays a colored ready message and the public overlay URL:
 
 ```text
-https://YOUR-QUICK-TUNNEL.trycloudflare.com/overlay?groupCode=YOUR_GROUP_CODE
++------------------------------------------------------------------------------------------+
+|  Spectra tunnel ready                                                                   |
+|  https://YOUR-QUICK-TUNNEL.trycloudflare.com/overlay?groupCode=YOUR_GROUP_CODE           |
++------------------------------------------------------------------------------------------+
+Keep window open. CTRL+C to exit
 ```
 
 Click or start the following programs before a match:
