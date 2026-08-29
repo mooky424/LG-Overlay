@@ -27,7 +27,7 @@ From `your-folder`, clone the two repositories:
 
 ```powershell
 git clone https://github.com/ValoSpectra/Spectra-Server.git
-git clone https://github.com/ValoSpectra/Spectra-Frontend.git Spectra-Frontend-VAL26
+git clone https://github.com/nobiiVAL/Spectra-Frontend-VAL26.git
 ```
 
 Install dependencies:
